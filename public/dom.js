@@ -29,7 +29,6 @@ function observer() {
         var isAnonymous = user.isAnonymous;
         var uid = user.uid;
         var providerData = user.providerData;
-        
         // ...
        
       } else {
@@ -51,7 +50,7 @@ function googlebtn(){
     const btnGoogle = document.getElementById("google");
  btnGoogle.addEventListener("click", googlebtn);
 
-/* esta funcion guarda los datos automaticamente//
+ //esta funcion guarda los datos automaticamente//
 
   function guardar (){
     firebase.database().ref("usuariosGoogle").set({
@@ -59,4 +58,4 @@ function googlebtn(){
       edad:"15",
       sexo:"x"
     })
-  }*/
+  }
