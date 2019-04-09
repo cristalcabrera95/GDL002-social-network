@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.9.3/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.9.3/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.9.3/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.9.3/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.9.3/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/5.9.3/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.9.3/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.9.3/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.9.3/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.9.3/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
@@ -26,7 +27,7 @@
 </head>
 
 <body>
-   <!-- Pantalla 1 iniciar sesion -->
+  <!-- Pantalla 1 iniciar sesion -->
   <div id="screen1" class="page">
     <img
       src="https://lh3.googleusercontent.com/RnyA1kU8hLkUMbDICeeDspL3YUeKZPzCrJeZaeLAnjnRBTtSx-iOjPe-RdgzyLB_3tHZvcEBmWui8OVSnKI8MWkVxSLA_YqkjzygB1pOL2zIwa8lNZUtICpLMHaB6n81awlapYb49mOLVXSL_FvMC75TDh0PeOTaFz1HrMBpMICBkn_9XR1ptJzDGwZuqXhFOI-8WGY2Qdzwbw0KbFvVujYkhCzqIv1dD8h9QsaI48NEtQiD7xJ2eKLU55MJWdMkP_osOylBElvFt4HfFxLBn8G2c2ElElm4-LwiFLOwFEri8eCMFAlrtzQcIbOdy7SsaYhQEtrHYHWy3qw5qaqasDnLO82rmKQ-jvO_TsWElPRBooq_fXwkVQm3ZDk-e90zC4B0V23MgRs1PTYr3t-FAwpi5c7irHiq2w3jY7fIH6kGEs9s_q1PgraTjjwpN-CM2PBjU30_on72MSxmII-pOlW6mWueVQ0unZiwMXUhAHdRdDIcFmM_FMw8P2vZfGX0HuddLVPunzXcBAIBS1vaEefcrTC8Ig39X4yDd4Pmh53IMjZmE_wfVsTy5EgBQMsd10WgeazWUIeYgPQSNqWf0IH0KXO1IOUaB5B8rgAvlEmRBut-bzI9OLCNdZMULaPPKQzOTFBx05EkdyBmYSobMnpQJDK0AcF5xLLjmOKu1Ol47JHCbqzcG5u0JOXv36M7rX104PrctNggq34VbQ=s200-no"
@@ -53,66 +54,67 @@
   <!-- Pantalla 2 de Post -->
   <div id="screen2" class="page">
     <header class="container-fluid">
-        <nav class="navbar navbar-dark" style="background-color: #546c2a;">
-            <a class="navbar-brand" href="#">Menu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Perfil</a>
-                </li>
-                <li class="nav-item active">
-                    <button id="close"> Cerrar sesion</button>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-      
+      <nav class="navbar navbar-dark" style="background-color: #546c2a;">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item active">
+              <button id="close"> Cerrar sesion</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <h1>Postear</h1>
     </header>
 
     <div class="container"></div>
     <!-- Introducir datos -->
     <div class="new-post"></div>
-<div id="sub-menu">
-<div id="left-bar">
-  <div class="heading">
-    Notifications
-  </div>
-</div>
-<div id="right-bar">
+    <div id="sub-menu">
+      <div id="left-bar">
+        <div class="heading">
+          Notifications
+        </div>
+      </div>
+      <div id="right-bar">
 
-</div>
-</div>
-<div id="main-window">
-<div class="post">
-  <div class="user">
-    <div class="user-img"></div>
-    <div class="user-info">
-      <div class="user-name"><input type="text" id="nombre" placeholder="nombre"></div>
-      <span class="post-date"><input type="text" id="fecha" placeholder="fecha"></span>
+      </div>
     </div>
-    
+    <div id="main-window">
+      <div class="post">
+        <div class="user">
+          <div class="user-img"></div>
+          <div class="user-info">
+            <div class="user-name"><input type="text" id="nombre" placeholder="nombre"></div>
+            <span class="post-date"><input type="text" id="fecha" placeholder="fecha"></span>
+          </div>
+
+        </div>
+        <div class="content">
+          <input type="text" id="comentario" placeholder="comentario">
+          <button class="btn-info" id="boton" onclick="guardar()">Guardar</button>
+        </div>
+      </div>
+      <div id="newPost"></div>
+    </div>
+    <!--FIN NUEVOS DATOS-->
+
   </div>
-  <div class="content">
-    <input type="text" id="comentario" placeholder="comentario">
-    <button class="btn-info" id="boton" onclick="guardar()">Guardar</button>
   </div>
-</div>
-<div id="newPost"></div>
-</div>
-<!--FIN NUEVOS DATOS-->
-          
   </div>
-</div>
-</div>
-  
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -131,4 +133,5 @@
 
 
 </body>
+
 </html>
